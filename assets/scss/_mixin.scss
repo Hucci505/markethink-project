@@ -1,0 +1,95 @@
+$xs-size: 425px;
+$sm-size: 576px;
+$md-size: 768px; // start mb || end tablet
+$lg-size: 992px; // labtop
+$xl-size: 1200px; // start tablet
+$xxl-size: 1400px; // dekstop
+
+@mixin xs-max {
+  @media screen and (max-width: ($xs-size - 1)) {
+    @content;
+  }
+}
+
+@mixin xs-min {
+  @media screen and (min-width: $xs-size) {
+    @content;
+  }
+}
+
+@mixin sm-max {
+  @media screen and (max-width: ($sm-size - 1)) {
+    @content;
+  }
+}
+
+@mixin sm-min {
+  @media screen and (min-width: $sm-size) {
+    @content;
+  }
+}
+
+@mixin md-max {
+  @media screen and (max-width: ($md-size - 1)) {
+    @content;
+  }
+}
+
+@mixin md-min {
+  @media screen and (min-width: $md-size) {
+    @content;
+  }
+}
+
+@mixin lg-max {
+  @media screen and (max-width: ($lg-size - 1)) {
+    @content;
+  }
+}
+
+@mixin lg-min {
+  @media screen and (min-width: $lg-size) {
+    @content;
+  }
+}
+
+@mixin xl-max {
+  @media screen and (max-width: ($xl-size - 1)) {
+    @content;
+  }
+}
+
+@mixin xl-min {
+  @media screen and (min-width: $xl-size) {
+    @content;
+  }
+}
+
+@mixin xxl-max {
+  @media screen and (max-width: ($xxl-size - 1)) {
+    @content;
+  }
+}
+
+@mixin xxl-min {
+  @media screen and (min-width: $xxl-size) {
+    @content;
+  }
+}
+
+// max-width
+// 00 -- md
+
+// min-width
+// md -- безкігнечність
+
+// header
+// 1. при 992 пропадає нвігація
+
+// banner
+// 1. при декс і мд спеси вер\низ зменшити
+// 1. заголовк центр
+
+// slider
+// 1. прогугли брейкпоінти для свайпера (кількістит слайдів)
+// 1. заголовк центр
